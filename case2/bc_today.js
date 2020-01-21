@@ -1,12 +1,12 @@
-
+"use strict"
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 2
 
    Today at the Union Script
-   Author: 
-   Date:   
+   Author: Gael Rodriguez Garcia
+   Date: 1/21/20  
    
    This script uses the getEvent() function to return the
    HTML code containin the daily events at the Bridger College
@@ -14,11 +14,11 @@
 
 */
 // setting up a new object date object
-var thisDate = new Date("October 12, 2018");
-// make that object into a string
+var thisDate = new Date("October 19 , 2018");
+// makes the object into a string
 var dateString = thisDate.toLocaleString();
 var dateHTML = "<h2>" + dateString + "</h2>";
-// get the specific day of the date
+// get the specific day
 var thisDay = thisDate.getDay();
 // run the getEvent function using thisDay as a parameter
 var eventHTML = getEvent(thisDay);
